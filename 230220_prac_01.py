@@ -47,6 +47,20 @@ def step_11650():
     for i in num:
         print(i[0],i[1])
     
+def step_10989():
+    from collections import defaultdict
+    import sys
+    ipt = sys.stdin.readline
+    dicts = defaultdict(int)
+    n = int(ipt())
+    for i in range(n):
+        dicts[int(ipt())] += 1
+    keys = list(dicts.keys())
+    print("keys === ", keys)
+    keys.sort()
+    for k in keys:
+        for _ in range(dicts[k]):
+            print(k)
 
 if __name__ == '__main__':
-    step_11650()
+    step_10989()
