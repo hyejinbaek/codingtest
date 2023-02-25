@@ -71,7 +71,6 @@ def star(n):
     if n == 1:
         return ['*']
     stars = star(n//3)
-    print("stars === ", stars)
     l = []
 
     for s in stars:
