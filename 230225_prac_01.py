@@ -12,6 +12,5 @@ def step_11729():
     hanoi(n, 1, 3)
 
 
-
 if __name__ == '__main__':
     step_11729()
